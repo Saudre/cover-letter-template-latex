@@ -6,6 +6,8 @@
 \usepackage[rm]{roboto} %Font
 \usepackage[skins]{tcolorbox} %Boxes
 \usepackage{geometry}
+\usepackage{fontawesome} %Icons
+
 
 %Page dimensions
 \geometry{lmargin=1cm,
@@ -16,8 +18,28 @@
     outer=7.7cm
 }
 
+%Colot palette
+%Headings
+\definecolor{headingFrameColor}{RGB}{0,0,0}
+\definecolor{headingBackground}{RGB}{0,0,0}
+\definecolor{headingName}{RGB}{79,224,176}
+%Boxes
+\definecolor{boxFrameColor}{RGB}{0,0,0}
+
 \begin{document}
-
-Saudre
-
+\marginpar{
+    \begin{tcolorbox}[
+        colback = headingBackground,
+        colframe = headingFrameColor
+    ]
+        \textcolor{headingName}{Saudre Cosaat}
+    \end{tcolorbox}
+    \begin{tcolorbox}[
+        title = ADDRESS: \hfill \faHome,
+        sharpish corners,
+        colframe = boxFrameColor
+    ]
+        123 
+    \end{tcolorbox}
+}
 \end{document}
