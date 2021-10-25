@@ -18,28 +18,120 @@
     outer=7.7cm
 }
 
-%Colot palette
+%COLOR PALETTE
+
 %Headings
 \definecolor{headingFrameColor}{RGB}{0,0,0}
 \definecolor{headingBackground}{RGB}{0,0,0}
-\definecolor{headingName}{RGB}{79,224,176}
+\definecolor{headingName}{RGB}{255,213,0}
+\definecolor{headingCompany}{RGB}{97,218,251}
+\definecolor{headingLetter}{RGB}{79,224,176}
+\definecolor{headingLetterBackgrown}{RGB}{0,0,0}
+
 %Boxes
 \definecolor{boxFrameColor}{RGB}{0,0,0}
+\definecolor{boxFrameBackground}{RGB}{255,255,255}
+
+%Letter
+\definecolor{letterFrameColor}{RGB}{0,0,0}
+\definecolor{letterFrameBackground}{RGB}{240,240,240}
 
 \begin{document}
 \marginpar{
+    \vspace{2cm}
     \begin{tcolorbox}[
         colback = headingBackground,
         colframe = headingFrameColor
     ]
-        \textcolor{headingName}{Saudre Cosaat}
+        \textcolor{headingName}{\large \textbf{Saudre Cosaat}}
     \end{tcolorbox}
     \begin{tcolorbox}[
         title = ADDRESS: \hfill \faHome,
         sharpish corners,
-        colframe = boxFrameColor
+        colframe = boxFrameColor,
+        colback = boxFrameBackground
     ]
-        123 
+        1600 Pennsylvania Avenue, \\
+        Washington DC
+    \end{tcolorbox}
+    \begin{tcolorbox}[
+        title = PHONE: \hfill \faPhone,
+        sharpish corners,
+        colframe = boxFrameColor,
+        colback = boxFrameBackground
+    ]
+        8888-888-8888
+    \end{tcolorbox}
+    \begin{tcolorbox}[
+        title = E-MAIL: \hfill \faEnvelope,
+        sharpish corners,
+        colframe = boxFrameColor,
+        colback = boxFrameBackground
+    ]
+        saudre.cosaat@mySite.com
+    \end{tcolorbox}
+    \begin{tcolorbox}[
+        colback = headingBackground,
+        colframe = headingFrameColor
+    ]
+        \textcolor{headingCompany}{\large \textbf{NASA}}
+    \end{tcolorbox}
+    \begin{tcolorbox}[
+        title = ADDRESS: \hfill \faBuildingO,
+        sharpish corners,
+        colframe = boxFrameColor,
+        colback = boxFrameBackground
+    ]
+        300 E. Street SW, Suite 5R30\\
+        Washington, DC 20546
+    \end{tcolorbox}
+    \begin{tcolorbox}[
+        title = PHONE: \hfill \faPhone,
+        sharpish corners,
+        colframe = boxFrameColor,
+        colback = boxFrameBackground
+    ]
+        (202) 358-0001 (Office)\\
+        (202) 358-4338 (Fax)
+    \end{tcolorbox}
+    \begin{tcolorbox}[
+        title = E-MAIL: \hfill \faEnvelope,
+        sharpish corners,
+        colframe = boxFrameColor,
+        colback = boxFrameBackground
+    ]
+        info@nasa.gov.org
     \end{tcolorbox}
 }
+
+%LETTER BODY
+\vspace{0.5cm}
+\begin{tcolorbox}[
+    colback = headingLetterBackgrown,
+    colframe = letterFrameColor
+]
+    \textcolor{headingLetter}{\Large \textbf{RE: NASA ANALYST}}
+\end{tcolorbox}
+\begin{tcolorbox}[
+    title = \textcolor{headingLetter}{\faEnvelope \hfill \today},
+    colback = letterFrameBackground,
+    colframe = letterFrameColor
+]
+    \setlength{\parindent}{1em}
+    \setlength{\parskip}{1em}
+    Dear \textbf{Hiring Manager}
+%Your text    
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc diam sapien, faucibus ac nibh vitae, condimentum rutrum ipsum. Proin condimentum risus diam, a egestas mi finibus sed. Vestibulum rutrum urna sit amet quam tempus, eget maximus massa commodo. Mauris rutrum nunc et arcu consequat, vel cursus enim egestas. Proin congue molestie orci, sit amet cursus eros. Vivamus luctus efficitur pharetra. Curabitur et est cursus leo pretium iaculis. Mauris imperdiet mauris lobortis leo feugiat suscipit.
+
+    Cras diam magna, semper sed porta sed, vulputate eu eros. Ut vitae lectus enim. Nullam et faucibus lorem. Etiam tellus nibh, luctus non cursus ac, ultrices id eros. Mauris felis dui, fermentum eget augue ac, commodo ornare diam. Integer efficitur cursus nunc, ut iaculis dui laoreet et. Aenean imperdiet varius orci, sit amet mattis nisl tempor a. In tempor condimentum tincidunt. Etiam vehicula fermentum lectus id semper. Mauris finibus, dolor sit amet tempus congue, felis neque placerat augue, vitae porttitor justo odio a tortor. In dignissim molestie leo, a fringilla massa cursus ut. Fusce sed ante erat. Cras rhoncus faucibus justo in maximus.
+
+    Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus sollicitudin sagittis odio non egestas. Cras at lectus justo. Pellentesque volutpat non metus laoreet vestibulum. Nullam ut lorem id libero posuere hendrerit. Suspendisse potenti. Donec viverra elit ut nibh rutrum, ut tempus dui gravida. Nam placerat, quam a faucibus luctus, lacus dolor commodo nisl, sed viverra purus elit at nunc. Praesent in pulvinar elit. Cras vestibulum consequat ex, vel condimentum diam semper pellentesque. Nam rhoncus arcu ac lobortis imperdiet. Maecenas lacinia erat varius ornare luctus. Fusce sit amet elit ut velit laoreet pulvinar eget a ante.
+
+    Aliquam sed consectetur leo. Integer lectus est, iaculis quis imperdiet ac, finibus ut enim. Quisque in justo dignissim, tristique purus in, blandit sapien. Donec finibus, turpis id hendrerit fermentum, dolor diam posuere dolor, id vulputate felis sem ut massa. In eleifend, ante vitae sagittis tempor, justo dolor dignissim dui, vel sodales nunc sapien non diam. Ut maximus ullamcorper rutrum. Nam at augue nibh. Sed suscipit ante blandit consectetur fermentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam congue in massa sed pulvinar. Phasellus et facilisis est, et tempor est. In leo arcu, lacinia sit amet odio non, luctus efficitur sem. Vestibulum eu metus vitae ligula mollis ornare. Pellentesque pretium turpis nunc, et dignissim quam lobortis nec.
+
+    Sincerely,
+%Your Sign
+    \textbf{Alexander Saudre Cosaat}
+\end{tcolorbox}
+
 \end{document}
